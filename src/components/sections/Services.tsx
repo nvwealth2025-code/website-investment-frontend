@@ -1,27 +1,17 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useRef, useState } from "react";
+import { useRef } from "react";
 import {
-  AnimatePresence,
   motion,
   useReducedMotion,
   useScroll,
   useTransform,
 } from "framer-motion";
 import { ArrowRight } from "lucide-react";
-import { servicesData, type ServiceContent } from "@/lib/services-data";
-
-const categoryTabs: ServiceContent["category"][] = [
-  "Investment Solutions",
-  "Wealth Management",
-  "Specialized Services",
-];
+import { servicesData } from "@/lib/services-data";
 
 export default function Services() {
-  const [activeTab, setActiveTab] = useState<ServiceContent["category"]>(
-    "Investment Solutions",
-  );
   const reduceMotion = useReducedMotion();
   const sectionRef = useRef<HTMLElement | null>(null);
 
@@ -41,11 +31,6 @@ export default function Services() {
     reduceMotion ? [0, 0] : [10, -10],
   );
 
-  const filteredServices = useMemo(
-    () => servicesData.filter((service) => service.category === activeTab),
-    [activeTab],
-  );
-
   const cardContainer = {
     hidden: { opacity: 0, y: reduceMotion ? 0 : 16 },
     show: {
@@ -56,11 +41,6 @@ export default function Services() {
         ease: [0.22, 1, 0.36, 1] as const,
         staggerChildren: reduceMotion ? 0 : 0.06,
       },
-    },
-    exit: {
-      opacity: 0,
-      y: reduceMotion ? 0 : -8,
-      transition: { duration: 0.22 },
     },
   };
 
@@ -129,49 +109,29 @@ export default function Services() {
             Complete Services
           </h2>
           <p className="text-muted-foreground text-lg">
-            Choose a category tab to explore service cards and open each
-            dedicated page.
+            Explore every service directly and open dedicated pages for full
+            details.
           </p>
         </div>
 
-        <div className="flex flex-wrap items-center justify-center gap-3 mb-10">
-          {categoryTabs.map((tab) => (
-            <motion.button
-              key={tab}
-              type="button"
-              onClick={() => setActiveTab(tab)}
-              whileHover={{ y: -3, scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              className={`rounded-full px-5 py-2.5 text-sm font-semibold transition-all border ${
-                activeTab === tab
-                  ? "border-primary bg-primary text-primary-foreground shadow-lg shadow-primary/20"
-                  : "border-border/60 bg-card/60 text-muted-foreground hover:text-foreground hover:border-primary/40"
-              }`}
-            >
-              {tab}
-            </motion.button>
-          ))}
-        </div>
-
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={activeTab}
-            variants={cardContainer}
-            initial="hidden"
-            animate="show"
-            exit="exit"
-            className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5"
-          >
-            {filteredServices.map((service) => (
+        <motion.div
+          variants={cardContainer}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, margin: "-80px" }}
+          className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5"
+        >
+          {servicesData.map((service) => (
               <motion.div
                 key={service.slug}
                 variants={cardItem}
                 whileHover={reduceMotion ? undefined : { y: -8, scale: 1.015 }}
                 whileTap={{ scale: 0.995 }}
+                className="h-full"
               >
                 <Link
                   href={`/services/${service.slug}`}
-                  className="group block relative overflow-hidden rounded-2xl border border-border/60 bg-card/60 p-6 hover:border-primary/40 hover:bg-card transition-all"
+                  className="group relative h-full min-h-[24rem] overflow-hidden rounded-2xl border border-border/60 bg-card/60 p-6 hover:border-primary/40 hover:bg-card transition-all flex flex-col"
                 >
                   <motion.div
                     className="pointer-events-none absolute -inset-x-6 -top-10 h-24 bg-linear-to-r from-transparent via-primary/15 to-transparent opacity-0 blur-xl transition-opacity duration-500 group-hover:opacity-100"
@@ -183,7 +143,7 @@ export default function Services() {
                     }
                   />
 
-                  <div className="relative z-10">
+                  <div className="relative z-10 flex h-full flex-col">
                     <h3 className="text-xl font-bold text-foreground mb-3">
                       {service.title}
                     </h3>
@@ -217,16 +177,15 @@ export default function Services() {
                       </ul>
                     </div>
 
-                    <span className="inline-flex items-center gap-1 mt-5 text-sm font-semibold text-primary">
+                    <span className="inline-flex items-center gap-1 mt-auto pt-5 text-sm font-semibold text-primary">
                       Learn more{" "}
                       <ArrowRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-0.5" />
                     </span>
                   </div>
                 </Link>
               </motion.div>
-            ))}
-          </motion.div>
-        </AnimatePresence>
+          ))}
+        </motion.div>
       </motion.div>
     </section>
   );

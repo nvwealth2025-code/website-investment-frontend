@@ -193,8 +193,8 @@ export default function Hero() {
               className="flex flex-wrap items-center gap-5 mb-7"
             >
               {[
-                { value: "₹100Cr+", label: "Assets Managed" },
-                { value: "500+", label: "Happy Clients" },
+                { value: "₹1Cr+", label: "Assets Advised" },
+                { value: "100+", label: "Happy Clients" },
                 { value: "10+", label: "Years Experience" },
               ].map((stat, i) => (
                 <div key={i} className="flex flex-col">
@@ -486,9 +486,9 @@ export default function Hero() {
                 </div>
                 <div>
                   <p className="text-xs font-bold text-foreground">
-                    AMFI Registered
+                    Client-First Advisory
                   </p>
-                  <p className="text-xs text-muted-foreground">ARN 351007</p>
+                  <p className="text-xs text-muted-foreground">Research-Led Approach</p>
                 </div>
               </div>
             </motion.div>

@@ -5,9 +5,9 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | NV Wealth",
+  title: "Privacy Policy | NV Investments",
   description:
-    "Privacy Policy for NV Wealth — how personal information is collected, used, shared, and protected.",
+    "Privacy Policy for NV Investments — how personal information is collected, used, shared, and protected.",
 };
 
 const sections = [
@@ -37,7 +37,7 @@ const sections = [
     id: 3,
     title: "Data Sharing & Disclosure",
     intro:
-      "NV WEALTH does not sell, rent, or trade your personal information. Your data may be shared only in the following circumstances:",
+      "NV INVESTMENTS does not sell, rent, or trade your personal information. Your data may be shared only in the following circumstances:",
     items: [
       "With regulatory authorities such as SEBI, AMFI, or other governing bodies, as required by law",
       "With authorized financial institutions and service providers for operational purposes",
@@ -68,7 +68,7 @@ const sections = [
   {
     id: 7,
     title: "Third-Party Links",
-    text: "Our website may contain links to third-party websites or services. NV WEALTH is not responsible for the privacy practices or content of such external platforms.",
+    text: "Our website may contain links to third-party websites or services. NV INVESTMENTS is not responsible for the privacy practices or content of such external platforms.",
   },
   {
     id: 8,
@@ -103,7 +103,7 @@ export default function PrivacyPolicyPage() {
               Privacy Policy
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              NV WEALTH is committed to safeguarding your personal information and maintaining transparency in how your data is collected, used, and protected.
+              NV INVESTMENTS is committed to safeguarding your personal information and maintaining transparency in how your data is collected, used, and protected.
             </p>
 
             {/* Info Cards */}
@@ -120,14 +120,14 @@ export default function PrivacyPolicyPage() {
                   <Mail className="w-5 h-5" />
                 </div>
                 <p className="text-xs uppercase tracking-wide text-muted-foreground mb-1">Contact</p>
-                <p className="text-sm font-semibold text-foreground">invest@nvwealth.in</p>
+                <p className="text-sm font-semibold text-foreground">info@nvwealth.in</p>
               </div>
               <div className="rounded-2xl border border-border/60 bg-background/60 p-4">
                 <div className="inline-flex mb-3 p-2 rounded-lg bg-primary/10 text-primary">
                   <MapPin className="w-5 h-5" />
                 </div>
                 <p className="text-xs uppercase tracking-wide text-muted-foreground mb-1">Company</p>
-                <p className="text-sm font-semibold text-foreground">NV WEALTH</p>
+                <p className="text-sm font-semibold text-foreground">NV INVESTMENTS</p>
               </div>
             </div>
           </div>

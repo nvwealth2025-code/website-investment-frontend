@@ -5,9 +5,9 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: "Disclaimer | NV Wealth",
+  title: "Disclaimer | NV Investments",
   description:
-    "Disclaimer page covering mandatory risk disclosures, limitations, and regulatory notices for NV Wealth.",
+    "Disclaimer page covering mandatory risk disclosures, limitations, and regulatory notices for NV Investments.",
 };
 
 const sections = [
@@ -25,7 +25,7 @@ const sections = [
   {
     id: 3,
     title: "No Guarantee of Returns",
-    text: "NV WEALTH does not assure or guarantee any returns, performance, or capital protection.",
+    text: "NV INVESTMENTS does not assure or guarantee any returns, performance, or capital protection.",
   },
   {
     id: 4,
@@ -35,7 +35,7 @@ const sections = [
   {
     id: 5,
     title: "Accuracy & Completeness",
-    text: "While efforts are made to ensure accuracy, NV WEALTH does not warrant that all information is complete, reliable, or up-to-date.",
+    text: "While efforts are made to ensure accuracy, NV INVESTMENTS does not warrant that all information is complete, reliable, or up-to-date.",
   },
   {
     id: 6,
@@ -45,7 +45,7 @@ const sections = [
   {
     id: 7,
     title: "Limitation of Liability",
-    text: "NV WEALTH shall not be held liable for any loss or damages arising from reliance on information provided on this website or from investment decisions.",
+    text: "NV INVESTMENTS shall not be held liable for any loss or damages arising from reliance on information provided on this website or from investment decisions.",
   },
   {
     id: 8,
@@ -80,7 +80,7 @@ export default function DisclaimerPage() {
               Disclaimer
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed mb-2">
-              NV WEALTH provides financial services and information through its website, subject to market risks, regulatory requirements, and investor due diligence.
+              NV INVESTMENTS provides financial services and information through its website, subject to market risks, regulatory requirements, and investor due diligence.
             </p>
 
             {/* Overview highlight */}
@@ -88,7 +88,7 @@ export default function DisclaimerPage() {
               <div className="flex items-start gap-3">
                 <Info className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                 <p className="text-muted-foreground leading-relaxed">
-                  NV WEALTH (AMFI Registered Mutual Fund Distributor – ARN 351007) provides financial services and information through its website https://www.nvwealth.in/.
+                  NV INVESTMENTS (AMFI Registered Mutual Fund Distributor – ARN 351007) provides financial services and information through its website https://www.nvwealth.in/.
                 </p>
               </div>
             </div>

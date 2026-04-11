@@ -33,11 +33,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: `${service.title} | Financial Services`,
-    description: `${service.shortDescription} NV Wealth \u2013 AMFI Registered Mutual Fund Distributor, ARN 351007, Ahmedabad.`,
+    description: `${service.shortDescription} NV Investments \u2013 AMFI Registered Mutual Fund Distributor, ARN 351007, Ahmedabad.`,
     keywords: [
       service.title,
       service.category,
-      "NV Wealth",
+      "NV Investments",
       "AMFI registered distributor",
       "Ahmedabad wealth management",
       "mutual fund Ahmedabad",
@@ -47,23 +47,23 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       canonical: canonicalUrl,
     },
     openGraph: {
-      title: `${service.title} | NV Wealth`,
+      title: `${service.title} | NV Investments`,
       description: service.shortDescription,
       url: canonicalUrl,
       type: "article",
-      siteName: "NV Wealth",
+      siteName: "NV Investments",
       images: [
         {
           url: "/opengraph.jpg",
           width: 1200,
           height: 630,
-          alt: `${service.title} \u2013 NV Wealth`,
+          alt: `${service.title} \u2013 NV Investments`,
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      title: `${service.title} | NV Wealth`,
+      title: `${service.title} | NV Investments`,
       description: service.shortDescription,
       images: ["/opengraph.jpg"],
     },
@@ -183,7 +183,7 @@ export default async function ServiceDetailPage({ params }: Props) {
 
             <section className="rounded-2xl border border-border/60 bg-card/55 p-6 md:p-7">
               <h2 className="text-xl font-bold text-foreground mb-4">
-                Why NV Wealth
+                Why NV Investments
               </h2>
               <ul className="space-y-3 text-muted-foreground">
                 {service.whyNvWealth.map((point) => (

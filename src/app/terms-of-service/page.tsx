@@ -5,9 +5,9 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: "Terms of Service | NV Wealth",
+  title: "Terms of Service | NV Investments",
   description:
-    "Terms and Conditions governing use of NV Wealth website and services.",
+    "Terms and Conditions governing use of NV Investments website and services.",
 };
 
 const sections = [
@@ -15,7 +15,7 @@ const sections = [
     id: 1,
     title: "Company Details",
     details: [
-      { label: "Company", value: "NV WEALTH" },
+      { label: "Company", value: "NV INVESTMENTS" },
       { label: "Address", value: "Cabin No. 14, B-802 Gopal Palace, Nehru Nagar, Ahmedabad – 380015" },
       { label: "Registration", value: "AMFI Registered Mutual Fund Distributor – ARN 351007" },
     ],
@@ -24,7 +24,7 @@ const sections = [
     id: 2,
     title: "Scope of Services",
     intro:
-      "NV WEALTH offers financial distribution and support services including but not limited to:",
+      "NV INVESTMENTS offers financial distribution and support services including but not limited to:",
     items: [
       "Mutual Fund Distribution",
       "Equity & IPO Assistance",
@@ -60,18 +60,18 @@ const sections = [
   {
     id: 6,
     title: "Intellectual Property Rights",
-    text: "All website content, including text, design, graphics, logos, and software, is the exclusive property of NV WEALTH and is protected under applicable intellectual property laws.",
+    text: "All website content, including text, design, graphics, logos, and software, is the exclusive property of NV INVESTMENTS and is protected under applicable intellectual property laws.",
   },
   {
     id: 7,
     title: "Third-Party Services",
-    text: "We may provide access to third-party platforms or services. NV WEALTH is not responsible for their content, policies, or performance.",
+    text: "We may provide access to third-party platforms or services. NV INVESTMENTS is not responsible for their content, policies, or performance.",
   },
   {
     id: 8,
     title: "Limitation of Liability",
     intro:
-      "NV WEALTH shall not be liable for any direct, indirect, incidental, or consequential damages arising from:",
+      "NV INVESTMENTS shall not be liable for any direct, indirect, incidental, or consequential damages arising from:",
     items: [
       "Use of the website",
       "Investment decisions made by users",
@@ -80,7 +80,7 @@ const sections = [
   {
     id: 9,
     title: "Indemnity",
-    text: "You agree to indemnify and hold harmless NV WEALTH against any claims, losses, or damages arising from your use of the website or violation of these terms.",
+    text: "You agree to indemnify and hold harmless NV INVESTMENTS against any claims, losses, or damages arising from your use of the website or violation of these terms.",
   },
   {
     id: 10,
@@ -120,7 +120,7 @@ export default function TermsOfServicePage() {
               Terms of Service
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-              By accessing or using the NV WEALTH website, you agree to be bound by these Terms &amp; Conditions.
+              By accessing or using the NV INVESTMENTS website, you agree to be bound by these Terms &amp; Conditions.
             </p>
 
             {/* Info Cards */}

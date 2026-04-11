@@ -6,7 +6,7 @@ export default function Testimonials() {
   const gridTestimonials = [
     {
       quote:
-        "Switching to NV Wealth was the best financial decision I've made. Their data-driven approach removes all the anxiety from investing.",
+        "Switching to NV Investments was the best financial decision I've made. Their data-driven approach removes all the anxiety from investing.",
       name: "Rajesh Sharma",
       role: "Tech Entrepreneur",
       initials: "RS",
@@ -97,14 +97,14 @@ export default function Testimonials() {
 
             <div className="flex flex-col items-center flex-1 pt-4 md:pt-0">
               <span className="text-3xl font-display font-bold text-foreground mb-1">
-                500+
+                100+
               </span>
               <span className="text-sm text-muted-foreground">Clients</span>
             </div>
 
             <div className="flex flex-col items-center flex-1 pt-4 md:pt-0">
               <span className="text-3xl font-display font-bold text-foreground mb-1">
-                Rs.100Cr+
+                Rs.1Cr+
               </span>
               <span className="text-sm text-muted-foreground">AUM</span>
             </div>
@@ -142,7 +142,7 @@ export default function Testimonials() {
                 <StarRating />
               </div>
               <p className="text-2xl md:text-3xl text-foreground font-display italic leading-snug mb-8">
-                "NV Wealth didn't just grow my portfolio — they changed how I
+                "NV Investments didn't just grow my portfolio — they changed how I
                 think about money. After 6 years as a client, I can confidently
                 say this is the most disciplined, transparent investment firm
                 I've worked with."
@@ -224,7 +224,7 @@ export default function Testimonials() {
           className="text-center"
         >
           <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-8">
-            Join 500+ investors already growing with NV Wealth
+            Join 100+ investors already growing with NV Investments
           </h3>
           <button
             className="px-8 py-4 rounded-full text-white font-bold text-lg hover:scale-105 transition-transform duration-300 shadow-xl"

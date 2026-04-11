@@ -15,6 +15,62 @@ export type ServiceContent = {
 
 export const servicesData: ServiceContent[] = [
   {
+    slug: "mutual-funds",
+    title: "Mutual Funds",
+    category: "Investment Solutions",
+    shortDescription:
+      "Smart, goal-based mutual fund portfolios designed for disciplined growth, diversification, and tax-efficient wealth building.",
+    overview:
+      "Every investor has different goals. We design personalized investment plans that match your lifestyle, risk comfort, and future plans—making wealth building a disciplined and simple process through mutual funds.",
+    idealFor:
+      "Investors seeking diversified, professionally managed portfolios with accessible, goal-based investment planning.",
+    keyOfferings: [
+      "Goal-based portfolio design aligned to life milestones",
+      "Diversified allocation across equity, debt, and liquid funds",
+      "Quality scheme selection backed by rigorous research",
+      "Tax-efficient solutions using ELSS and structured SIPs",
+    ],
+    approach: [
+      "Define your objectives clearly: wealth creation, protection, or tax savings",
+      "Profile your life stage, income, and risk comfort",
+      "Design a tailored mutual fund mix for your goals",
+      "Select the right schemes and monitor the portfolio regularly",
+    ],
+    whyNvWealth: [
+      "Personalized, goal-first mutual fund planning",
+      "Transparent guidance on regulated, research-backed schemes",
+      "Simplified investing with disciplined monitoring",
+    ],
+  },
+  {
+    slug: "bonds",
+    title: "Bonds",
+    category: "Investment Solutions",
+    shortDescription:
+      "Strategic bond investments for steady income, capital preservation, and portfolio diversification with managed risk exposure.",
+    overview:
+      "Bonds offer a reliable path to steady income and capital preservation in your investment portfolio. We help you navigate the bond market with expert analysis of government securities, corporate bonds, and debt instruments to balance risk and returns.",
+    idealFor:
+      "Conservative investors seeking steady income streams, capital preservation, and portfolio diversification with lower volatility than equities.",
+    keyOfferings: [
+      "Government and corporate bond portfolio construction",
+      "Yield curve analysis and duration management",
+      "Credit rating assessment and risk evaluation",
+      "Tax-efficient bond laddering strategies",
+    ],
+    approach: [
+      "Assess your income needs and risk tolerance for bonds",
+      "Analyze current bond market conditions and yields",
+      "Build diversified bond portfolio across maturities",
+      "Monitor interest rate changes and rebalance as needed",
+    ],
+    whyNvWealth: [
+      "Expert analysis of bond markets and credit quality",
+      "Focus on capital preservation with income generation",
+      "Transparent pricing and no hidden charges",
+    ],
+  },
+  {
     slug: "equity-advisory",
     title: "Equity Advisory",
     category: "Investment Solutions",
@@ -40,34 +96,6 @@ export const servicesData: ServiceContent[] = [
       "Research-first recommendation process",
       "Transparent communication of rationale and risks",
       "Disciplined long-term framework over short-term noise",
-    ],
-  },
-  {
-    slug: "mutual-funds",
-    title: "Mutual Funds",
-    category: "Investment Solutions",
-    shortDescription:
-      "Curated mutual fund portfolios designed around your goals, risk profile, and time horizon for steady wealth creation.",
-    overview:
-      "We help you select and monitor mutual funds using a goal-led process. From SIP planning to portfolio clean-up, every recommendation is made for clarity, suitability, and long-term consistency.",
-    idealFor:
-      "Investors who prefer diversified, professionally managed market exposure through SIP or lump sum investing.",
-    keyOfferings: [
-      "Goal-based fund selection and portfolio structuring",
-      "SIP and STP planning for disciplined investing",
-      "Tax-saving fund selection where relevant",
-      "Portfolio overlap and underperformance review",
-    ],
-    approach: [
-      "Map financial goals to realistic timelines",
-      "Choose suitable fund categories and allocation",
-      "Track performance and risk at portfolio level",
-      "Refine fund mix as your goals evolve",
-    ],
-    whyNvWealth: [
-      "Client-first advice without product clutter",
-      "Simple and transparent portfolio explanations",
-      "Continuous review support, not one-time recommendations",
     ],
   },
   {
@@ -183,90 +211,6 @@ export const servicesData: ServiceContent[] = [
     ],
   },
   {
-    slug: "fixed-income",
-    title: "Fixed Income",
-    category: "Investment Solutions",
-    shortDescription:
-      "Stable-return allocation through carefully selected fixed-income instruments and conservative portfolio design.",
-    overview:
-      "Fixed income plays a critical role in capital stability and cash flow planning. We help align debt allocation to your income needs, liquidity preferences, and risk profile.",
-    idealFor:
-      "Investors prioritizing capital preservation, steady income, and lower volatility.",
-    keyOfferings: [
-      "Debt allocation framework aligned to goals",
-      "Instrument suitability and duration guidance",
-      "Liquidity and credit-risk awareness",
-      "Periodic review in changing rate cycles",
-    ],
-    approach: [
-      "Assess cash flow and stability requirements",
-      "Select suitable fixed-income mix",
-      "Balance return expectations with risk limits",
-      "Review portfolio sensitivity to rate changes",
-    ],
-    whyNvWealth: [
-      "Conservative and transparent debt allocation approach",
-      "Clarity on risk-return trade-offs",
-      "Integrated with your total portfolio strategy",
-    ],
-  },
-  {
-    slug: "financial-planning",
-    title: "Financial Planning",
-    category: "Wealth Management",
-    shortDescription:
-      "Comprehensive planning for goals, cash flows, protection, and long-term wealth outcomes.",
-    overview:
-      "Financial planning creates a practical roadmap for your money decisions. We connect income, expenses, investments, and life goals into a structured long-term plan.",
-    idealFor:
-      "Families and professionals who want a clear financial roadmap beyond product-level investing.",
-    keyOfferings: [
-      "Goal-based financial roadmap creation",
-      "Investment allocation aligned to milestones",
-      "Emergency corpus and liquidity planning",
-      "Periodic progress review and course correction",
-    ],
-    approach: [
-      "Understand current finances and future priorities",
-      "Set realistic timelines and target corpus",
-      "Design a goal-linked investment framework",
-      "Monitor progress and adapt with life changes",
-    ],
-    whyNvWealth: [
-      "Holistic planning over isolated product advice",
-      "Simple, actionable recommendations",
-      "Long-term partnership for evolving needs",
-    ],
-  },
-  {
-    slug: "tax-planning",
-    title: "Tax Planning",
-    category: "Wealth Management",
-    shortDescription:
-      "Tax-efficient structuring to help optimize post-tax outcomes without losing sight of financial goals.",
-    overview:
-      "Smart tax planning supports wealth creation by improving net returns. We guide tax-efficient investment choices and year-round planning discipline.",
-    idealFor:
-      "Investors and professionals seeking better post-tax efficiency in their financial strategy.",
-    keyOfferings: [
-      "Tax-saving investment guidance",
-      "Year-round tax planning support",
-      "Portfolio tax-efficiency review",
-      "Goal alignment with tax decisions",
-    ],
-    approach: [
-      "Review current tax profile and cash flows",
-      "Identify suitable tax-efficient routes",
-      "Align tax actions with long-term goals",
-      "Track and optimize annually",
-    ],
-    whyNvWealth: [
-      "Tax planning integrated with overall wealth plan",
-      "Practical and compliant recommendations",
-      "Clarity-first approach in every decision",
-    ],
-  },
-  {
     slug: "pms-aif-sif",
     title: "PMS / AIF / SIF",
     category: "Wealth Management",
@@ -292,62 +236,6 @@ export const servicesData: ServiceContent[] = [
       "Objective product suitability analysis",
       "Risk disclosure with full transparency",
       "Aligned to your broader long-term plan",
-    ],
-  },
-  {
-    slug: "nri-investment-services",
-    title: "NRI Services",
-    category: "Specialized Services",
-    shortDescription:
-      "Structured investment support for NRIs with practical guidance on compliant and goal-aligned wealth planning.",
-    overview:
-      "We support NRI investors with tailored advisory that considers residency context, banking routes, and long-term India-linked wealth goals.",
-    idealFor:
-      "NRIs seeking professional support to build and manage investments in India with clarity and structure.",
-    keyOfferings: [
-      "NRI-oriented investment planning support",
-      "Portfolio structuring based on goals and horizon",
-      "Coordination for practical execution steps",
-      "Periodic review and advisory continuity",
-    ],
-    approach: [
-      "Understand residency profile and planning goals",
-      "Design a suitable India-focused allocation plan",
-      "Support structured implementation",
-      "Review and refine with life-stage changes",
-    ],
-    whyNvWealth: [
-      "Personalized advisory for NRI realities",
-      "Clear communication and transparent process",
-      "Long-term discipline across market cycles",
-    ],
-  },
-  {
-    slug: "term-life-insurance",
-    title: "Term Insurance",
-    category: "Specialized Services",
-    shortDescription:
-      "Protection-first guidance to secure your family with suitable term insurance planning.",
-    overview:
-      "Protection is a core part of financial planning. We help you evaluate coverage needs and choose suitable term insurance so your wealth plan remains resilient.",
-    idealFor:
-      "Individuals and families who want to secure financial dependents through structured protection planning.",
-    keyOfferings: [
-      "Coverage adequacy assessment",
-      "Term-plan suitability guidance",
-      "Integration with financial goals",
-      "Periodic protection review",
-    ],
-    approach: [
-      "Assess liabilities and dependent needs",
-      "Determine suitable coverage range",
-      "Select policy structure aligned to goals",
-      "Review coverage as life milestones change",
-    ],
-    whyNvWealth: [
-      "Protection-first planning mindset",
-      "Simple and transparent guidance",
-      "Aligned with long-term family security goals",
     ],
   },
 ];

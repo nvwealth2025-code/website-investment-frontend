@@ -23,8 +23,8 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "invest@nvwealth.in",
-    href: "mailto:invest@nvwealth.in",
+    value: "info@nvwealth.in",
+    href: "mailto:info@nvwealth.in",
     color: "#84B135",
   },
 
@@ -271,12 +271,8 @@ export default function Contact() {
               style={{ background: "var(--surface-strong)" }}
             >
               <div className="mb-6">
-                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-primary/30 bg-primary/10 text-primary text-xs font-bold tracking-wider uppercase mb-4">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#84B135] animate-pulse" />
-                  AMFI Registered · ARN 351007
-                </div>
                 <h3 className="text-2xl font-display font-bold text-foreground mb-2">
-                  NV Wealth Team
+                  NV Investments Team
                 </h3>
                 <p className="text-muted-foreground text-sm">
                   Smart Investing for a Better Tomorrow
@@ -487,15 +483,11 @@ export default function Contact() {
                             className={`${inputNormal} cursor-pointer appearance-none pr-10`}
                           >
                             <option value="">Select a topic…</option>
-                            <option value="Mutual Funds">Mutual Funds</option>
                             <option value="Equity Investments">
                               Equity Investments
                             </option>
                             <option value="Portfolio Management (PMS)">
                               Portfolio Management (PMS)
-                            </option>
-                            <option value="Financial Planning">
-                              Financial Planning
                             </option>
                             <option value="SIP Planning">SIP Planning</option>
                             <option value="Tax Saving (ELSS)">

@@ -184,7 +184,7 @@ export default function Approach() {
             market's mood."
           </p>
           <p className="text-muted-foreground uppercase tracking-widest text-sm font-semibold">
-            — NV Wealth Investment Philosophy
+            — NV Investments Investment Philosophy
           </p>
         </motion.div>
       </div>

@@ -12,7 +12,7 @@ import {
 const faqItems = [
   {
     value: "item-1",
-    question: "How does NV Wealth support an investor from start to long-term review?",
+    question: "How does NV Investments support an investor from start to long-term review?",
     answer:
       "We begin with your goals, risk comfort, and time horizon, then shape a practical investment roadmap. That can include mutual funds, SIP planning, tax-saving ideas, portfolio restructuring, and periodic reviews so your strategy stays relevant over time.",
   },
@@ -80,7 +80,7 @@ export default function Faq() {
             Frequently Asked Questions
           </h2>
           <p className="max-w-3xl text-lg text-muted-foreground sm:text-xl">
-            Have questions about investing with NV Wealth? Explore quick answers below or reach out to our team for personalized guidance.
+            Have questions about investing with NV Investments? Explore quick answers below or reach out to our team for personalized guidance.
           </p>
         </motion.div>
 
@@ -105,7 +105,7 @@ export default function Faq() {
                 </div>
                 <div className="grid grid-cols-2 gap-3 sm:min-w-[230px]">
                   <div className="rounded-2xl border border-border/60 bg-card/70 px-4 py-3">
-                    <div className="text-lg font-display font-bold text-foreground">500+</div>
+                    <div className="text-lg font-display font-bold text-foreground">100+</div>
                     <div className="mt-1 text-[11px] uppercase tracking-[0.2em] text-muted-foreground">Clients</div>
                   </div>
                   <div className="rounded-2xl border border-border/60 bg-card/70 px-4 py-3">
@@ -175,7 +175,7 @@ export default function Faq() {
 
               <div className="relative z-10 mt-6 grid gap-4 sm:grid-cols-3">
                 <div className="rounded-2xl border border-border/60 bg-background/80 px-4 py-4 text-center shadow-sm">
-                  <div className="text-2xl font-display font-bold text-foreground">500+</div>
+                  <div className="text-2xl font-display font-bold text-foreground">100+</div>
                   <div className="mt-1 text-xs uppercase tracking-[0.18em] text-muted-foreground">Investors Served</div>
                 </div>
                 <div className="rounded-2xl border border-border/60 bg-background/80 px-4 py-4 text-center shadow-sm">
@@ -183,8 +183,8 @@ export default function Faq() {
                   <div className="mt-1 text-xs uppercase tracking-[0.18em] text-muted-foreground">Years Experience</div>
                 </div>
                 <div className="rounded-2xl border border-border/60 bg-background/80 px-4 py-4 text-center shadow-sm">
-                  <div className="text-2xl font-display font-bold text-foreground">ARN 351007</div>
-                  <div className="mt-1 text-xs uppercase tracking-[0.18em] text-muted-foreground">AMFI Registered</div>
+                  <div className="text-2xl font-display font-bold text-foreground">Trusted Advisory</div>
+                  <div className="mt-1 text-xs uppercase tracking-[0.18em] text-muted-foreground">Investment Guidance</div>
                 </div>
               </div>
 

@@ -4,14 +4,14 @@ import Hero from "@/components/sections/Hero";
 import Services from "@/components/sections/Services";
 
 export const metadata: Metadata = {
-  title: "NV Wealth | Smart Investing for a Better Tomorrow",
+  title: "NV Investments | Smart Investing for a Better Tomorrow",
   description:
-    "NV Wealth is an AMFI Registered Mutual Fund Distributor (ARN 351007) in Ahmedabad. We offer mutual funds, SIP planning, equity advisory, tax planning, and comprehensive wealth management services.",
+    "NV Investments is an AMFI Registered Mutual Fund Distributor (ARN 351007) in Ahmedabad. We offer mutual funds, SIP planning, equity advisory, tax planning, and comprehensive wealth management services.",
   alternates: {
     canonical: "https://www.investment.nvwealth.in",
   },
   openGraph: {
-    title: "NV Wealth | Smart Investing for a Better Tomorrow",
+    title: "NV Investments | Smart Investing for a Better Tomorrow",
     description:
       "AMFI Registered Mutual Fund Distributor in Ahmedabad. Expert SIP, equity, tax and wealth planning advisory.",
     url: "https://www.investment.nvwealth.in",

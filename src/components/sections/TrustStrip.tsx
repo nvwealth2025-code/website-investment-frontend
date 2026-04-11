@@ -24,10 +24,9 @@ export default function TrustStrip() {
   };
 
   const stats = [
-    { value: "₹100Cr+", label: "AUM" },
-    { value: "500+", label: "Clients" },
+    { value: "₹1Cr+", label: "AUM" },
+    { value: "100+", label: "Clients" },
     { value: "10+", label: "Years Exp." },
-    { value: "✓", label: "AMFI Registered" },
   ];
 
   return (
@@ -38,7 +37,7 @@ export default function TrustStrip() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, margin: "-80px" }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-0 divide-x-0 md:divide-x divide-border/60"
+          className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-0 divide-x-0 md:divide-x divide-border/60"
         >
           {stats.map((stat, i) => (
             <motion.div
