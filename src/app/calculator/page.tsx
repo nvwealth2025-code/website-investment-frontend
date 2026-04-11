@@ -44,8 +44,8 @@ const segmentConfig: SegmentConfig[] = [
     sttRate: 0.001,
     sttOn: "turnover",
     exchangeRate: 0.0000297,
-    brokerageRate: 0,
-    brokerageCap: 0,
+    brokerageRate: 0.0003,
+    brokerageCap: 40,
     stampRate: 0.00015,
   },
   {
