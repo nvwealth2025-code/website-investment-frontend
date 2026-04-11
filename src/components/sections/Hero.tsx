@@ -208,7 +208,7 @@ export default function Hero() {
               ))}
             </motion.div>
 
-            <motion.div
+            {/* <motion.div
               variants={heroItem}
               className="flex flex-row flex-wrap items-center gap-3 mt-4"
             >
@@ -230,7 +230,7 @@ export default function Hero() {
                 <ShieldCheck className="w-4 h-4 shrink-0 text-[#2A7DB5]" />
                 Get Expert Support
               </a>
-            </motion.div>
+            </motion.div> */}
           </motion.div>
 
           {/* Right: Dashboard Mockup */}
