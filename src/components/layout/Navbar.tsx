@@ -46,7 +46,7 @@ export default function Navbar() {
   const navLinks = [
     { name: "Philosophy", href: "/#approach", icon: Lightbulb },
     { name: "FAQ", href: "/#faq", icon: BadgeHelp },
-    { name: "Contact", href: "/#contact", icon: Contact },
+    { name: "Contact", href: "/#contact", icon: Contact }
   ];
 
   const allServices = servicesData;
@@ -244,7 +244,7 @@ export default function Navbar() {
                   Report Login
                 </a>
                      <a
-                  href="https://jplus.jainam.in/"
+                  href="/open-demat-account"
                   target="_blank"
                   rel="noreferrer"
                   className="block rounded-xl px-3 py-2.5 text-sm font-medium text-muted-foreground transition-colors hover:bg-primary/8 hover:text-foreground"
@@ -439,6 +439,15 @@ export default function Navbar() {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Report Login
+              </a>
+                     <a
+                href="/open-demat-account"
+                target="_blank"
+                rel="noreferrer"
+                className="block rounded-md px-2 py-1.5 text-sm text-muted-foreground hover:bg-primary/10 hover:text-foreground"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Open Demat Account
               </a>
             </div>
           </div>
