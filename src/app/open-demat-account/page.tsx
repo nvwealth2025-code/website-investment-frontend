@@ -95,9 +95,14 @@ export default function OpenDematAccountPage() {
                 </li>
               </ul>
 
-              <button className="w-full rounded-xl border border-border py-3 font-semibold hover:bg-muted">
-                Open an Account
-              </button>
+           <a
+  href="https://signup.jainam.in/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="w-full inline-flex items-center justify-center rounded-xl border border-border py-3 font-semibold hover:bg-muted"
+>
+  Open an Account
+</a>
             </div>
 
           </section>
