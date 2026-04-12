@@ -25,7 +25,7 @@ export default function TrustStrip() {
 
   const stats = [
     { value: "₹1Cr+", label: "AUM" },
-    { value: "100+", label: "Clients" },
+    { value: "270+", label: "Clients" },
     { value: "10+", label: "Years Exp." },
   ];
 

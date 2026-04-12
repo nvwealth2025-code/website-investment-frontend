@@ -35,7 +35,7 @@ export default function Cta() {
             transition={{ duration: 0.7, delay: 0.12, ease: ctaEase }}
             className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto"
           >
-            Join 100+ investors who chose discipline over guesswork.
+            Join 270+ investors who chose discipline over guesswork.
           </motion.p>
 
           <motion.div

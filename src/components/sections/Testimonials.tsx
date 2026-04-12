@@ -4,38 +4,72 @@ import { motion } from "framer-motion";
 import { Quote, Star } from "lucide-react";
 export default function Testimonials() {
   const gridTestimonials = [
-    {
-      quote:
-        "Switching to NV Investments was the best financial decision I've made. Their data-driven approach removes all the anxiety from investing.",
-      name: "Rajesh Sharma",
-      role: "Tech Entrepreneur",
-      initials: "RS",
-      color: "#84B135",
-    },
-    {
-      quote:
-        "They don't just sell products; they build a roadmap. The clarity I have about my retirement is incredibly comforting.",
-      name: "Priya Desai",
-      role: "Medical Professional",
-      initials: "PD",
-      color: "#2A7DB5",
-    },
-    {
-      quote:
-        "The discipline they enforce during market dips is what separates them from regular advisors. Highly recommended.",
-      name: "Anand Verma",
-      role: "Corporate Executive",
-      initials: "AV",
-      color: "#2A7DB5",
-    },
-    {
-      quote:
-        "Professional, transparent, and results-oriented. My portfolio grew 28% last year under their management.",
-      name: "Sunita Rao",
-      role: "Business Owner",
-      initials: "SR",
-      color: "#84B135",
-    },
+  [
+  {
+    quote:
+      "Switching to NV Investments was the best financial decision I've made. Their data-driven approach removes all the anxiety from investing.",
+    name: "Keyur Shah",
+    role: "Tech Entrepreneur",
+    initials: "KS",
+    color: "#84B135",
+  },
+  {
+    quote:
+      "They don't just sell products; they build a roadmap. The clarity I have about my retirement is incredibly comforting.",
+    name: "Jigar Doshi",
+    role: "Medical Professional",
+    initials: "JD",
+    color: "#2A7DB5",
+  },
+  {
+    quote:
+      "The discipline they enforce during market dips is what separates them from regular advisors. Highly recommended.",
+    name: "Paras Shah",
+    role: "Corporate Executive",
+    initials: "PS",
+    color: "#2A7DB5",
+  },
+  {
+    quote:
+      "Professional, transparent, and results-oriented. My portfolio grew 28% last year under their management.",
+    name: "Sunilkumar Jain",
+    role: "Business Owner",
+    initials: "SJ",
+    color: "#84B135",
+  },
+  {
+    quote:
+      "Excellent guidance and consistent support throughout my investment journey.",
+    name: "Atulbhai Shah",
+    role: "Investor",
+    initials: "AS",
+    color: "#2A7DB5",
+  },
+  {
+    quote:
+      "Clear communication and disciplined strategy helped me stay confident during volatile markets.",
+    name: "Viraj Gandhi",
+    role: "Entrepreneur",
+    initials: "VG",
+    color: "#84B135",
+  },
+  {
+    quote:
+      "Highly professional team with a strong focus on long-term wealth creation.",
+    name: "Manish Mehta",
+    role: "Business Owner",
+    initials: "MM",
+    color: "#2A7DB5",
+  },
+  {
+    quote:
+      "Reliable advice and transparent process. I feel secure about my financial future.",
+    name: "Sunny Chauhan",
+    role: "Working Professional",
+    initials: "SC",
+    color: "#84B135",
+  },
+]
   ];
 
   const StarRating = () => (
@@ -97,7 +131,7 @@ export default function Testimonials() {
 
             <div className="flex flex-col items-center flex-1 pt-4 md:pt-0">
               <span className="text-3xl font-display font-bold text-foreground mb-1">
-                100+
+                270+
               </span>
               <span className="text-sm text-muted-foreground">Clients</span>
             </div>
@@ -224,7 +258,7 @@ export default function Testimonials() {
           className="text-center"
         >
           <h3 className="text-2xl md:text-3xl font-display font-bold text-foreground mb-8">
-            Join 100+ investors already growing with NV Investments
+            Join 270+ investors already growing with NV Investments
           </h3>
           <button
             className="px-8 py-4 rounded-full text-white font-bold text-lg hover:scale-105 transition-transform duration-300 shadow-xl"
