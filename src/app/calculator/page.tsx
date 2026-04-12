@@ -120,24 +120,38 @@ function calculateSegment(
   const exchangeMultiplier = exchange === "BSE" ? 0.95 : 1;
   const exchangeTxn = turnover * config.exchangeRate * exchangeMultiplier;
 
-  const rawBrokerage = turnover * config.brokerageRate;
-  const brokerage =
-    config.brokerageCap > 0
-      ? Math.min(config.brokerageCap, rawBrokerage)
-      : 0;
+  // ✅ FIXED BROKERAGE LOGIC
+  let brokerage = 0;
+
+  if (config.key === "options") {
+    brokerage = 40; // 👈 Flat ₹40 for Options
+  } 
+  // 👉 Uncomment below if you ALSO want Futures = ₹40
+  // else if (config.key === "futures") {
+  //   brokerage = 40;
+  // } 
+  else {
+    const rawBrokerage = turnover * config.brokerageRate;
+    brokerage =
+      config.brokerageCap > 0
+        ? Math.min(config.brokerageCap, rawBrokerage)
+        : 0;
+  }
 
   const sttBase =
     config.sttOn === "buy"
       ? buyValue
       : config.sttOn === "sell"
-        ? sellValue
-        : turnover;
+      ? sellValue
+      : turnover;
 
   const stt = sttBase * config.sttRate;
   const sebi = turnover * 0.000001;
   const stampDuty = buyValue * config.stampRate;
   const gst = 0.18 * (brokerage + exchangeTxn);
-  const totalCharges = brokerage + stt + exchangeTxn + sebi + stampDuty + gst;
+
+  const totalCharges =
+    brokerage + stt + exchangeTxn + sebi + stampDuty + gst;
 
   const grossPnL = (sell - buy) * quantity;
   const netPnL = grossPnL - totalCharges;
