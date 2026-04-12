@@ -275,7 +275,7 @@ export default function Contact() {
                   NV Investments Team
                 </h3>
                 <p className="text-muted-foreground text-sm">
-                  Smart Investing for a Better Tomorrow
+                  Smart Investing,Stronger Futures
                 </p>
               </div>
 

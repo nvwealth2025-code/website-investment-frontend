@@ -185,7 +185,7 @@ export default function Hero() {
               variants={heroItem}
               className="text-sm text-foreground/55 italic mb-5"
             >
-              "Smart Investing for a Better Tomorrow"
+              "Smart Investing,Stronger Futures"
             </motion.p>
 
             <motion.div

@@ -57,7 +57,7 @@ export default function Footer() {
               />
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-              Smart Investing for a Better Tomorrow
+              Smart Investing,Stronger Futures
             </p>
 
             <div className="mb-7">
@@ -100,7 +100,7 @@ export default function Footer() {
             <h4 className="text-foreground font-bold mb-6">Company</h4>
             <ul className="space-y-4 text-sm text-muted-foreground">
               <li className="font-semibold text-foreground">NV INVESTMENTS</li>
-              <li>Smart Investing for a Better Tomorrow</li>
+              <li>Smart Investing,Stronger Futures</li>
               <li>
                 <Link
                   href="/#services"
