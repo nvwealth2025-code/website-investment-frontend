@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Quote, Star } from "lucide-react";
 export default function Testimonials() {
   const gridTestimonials = [
-  [
+  
   {
     quote:
       "Switching to NV Investments was the best financial decision I've made. Their data-driven approach removes all the anxiety from investing.",
@@ -69,7 +69,7 @@ export default function Testimonials() {
     initials: "SC",
     color: "#84B135",
   },
-]
+
   ];
 
   const StarRating = () => (
